@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0209DAF31EAFB7D10017D951 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209DAF21EAFB7CE0017D951 /* AppModel.swift */; };
 		024C534A1EA506C600D560AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C53491EA506C600D560AA /* AppDelegate.swift */; };
-		024C534C1EA506C600D560AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C534B1EA506C600D560AA /* ViewController.swift */; };
 		024C534F1EA506C600D560AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024C534D1EA506C600D560AA /* Main.storyboard */; };
 		024C53511EA506C600D560AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024C53501EA506C600D560AA /* Assets.xcassets */; };
 		024C53541EA506C600D560AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024C53521EA506C600D560AA /* LaunchScreen.storyboard */; };
+		024C535C1EA508E700D560AA /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C535B1EA508E700D560AA /* ProductsViewController.swift */; };
+		024C53611EA5096700D560AA /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C535F1EA5096700D560AA /* ProductCell.swift */; };
+		024C53621EA5096700D560AA /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024C53601EA5096700D560AA /* ProductCell.xib */; };
+		024C53641EA5098F00D560AA /* AppFiguresClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C53631EA5098F00D560AA /* AppFiguresClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0209DAF21EAFB7CE0017D951 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		024C53461EA506C600D560AA /* StaleApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaleApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		024C53491EA506C600D560AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		024C534B1EA506C600D560AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		024C534E1EA506C600D560AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		024C53501EA506C600D560AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		024C53531EA506C600D560AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		024C53551EA506C600D560AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		024C535B1EA508E700D560AA /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		024C535F1EA5096700D560AA /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		024C53601EA5096700D560AA /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		024C53631EA5098F00D560AA /* AppFiguresClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFiguresClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				024C53491EA506C600D560AA /* AppDelegate.swift */,
-				024C534B1EA506C600D560AA /* ViewController.swift */,
 				024C534D1EA506C600D560AA /* Main.storyboard */,
 				024C53501EA506C600D560AA /* Assets.xcassets */,
 				024C53521EA506C600D560AA /* LaunchScreen.storyboard */,
 				024C53551EA506C600D560AA /* Info.plist */,
+				024C535B1EA508E700D560AA /* ProductsViewController.swift */,
+				024C535F1EA5096700D560AA /* ProductCell.swift */,
+				024C53601EA5096700D560AA /* ProductCell.xib */,
+				024C53631EA5098F00D560AA /* AppFiguresClient.swift */,
+				0209DAF21EAFB7CE0017D951 /* AppModel.swift */,
 			);
 			path = StaleApps;
 			sourceTree = "<group>";
@@ -96,6 +108,7 @@
 				TargetAttributes = {
 					024C53451EA506C600D560AA = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 47BB9N28PZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				024C53541EA506C600D560AA /* LaunchScreen.storyboard in Resources */,
+				024C53621EA5096700D560AA /* ProductCell.xib in Resources */,
 				024C53511EA506C600D560AA /* Assets.xcassets in Resources */,
 				024C534F1EA506C600D560AA /* Main.storyboard in Resources */,
 			);
@@ -136,7 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				024C534C1EA506C600D560AA /* ViewController.swift in Sources */,
+				024C53611EA5096700D560AA /* ProductCell.swift in Sources */,
+				024C535C1EA508E700D560AA /* ProductsViewController.swift in Sources */,
+				024C53641EA5098F00D560AA /* AppFiguresClient.swift in Sources */,
+				0209DAF31EAFB7D10017D951 /* AppModel.swift in Sources */,
 				024C534A1EA506C600D560AA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 47BB9N28PZ;
 				INFOPLIST_FILE = StaleApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = brandon.StaleApps;
@@ -272,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 47BB9N28PZ;
 				INFOPLIST_FILE = StaleApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = brandon.StaleApps;
@@ -299,6 +318,7 @@
 				024C535A1EA506C600D560AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
